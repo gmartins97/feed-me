@@ -1,7 +1,7 @@
 import React from "react"
 import { Navbar, Nav } from 'react-bootstrap'
 
-const navbar = () => {
+const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark" sticky="top">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -13,4 +13,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default NavBar
