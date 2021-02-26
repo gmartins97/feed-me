@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 
 import NavBar from "../components/navbar"
 import SEO from "../components/seo"
-import logo from "../images/logo465x320.png"
+import logo from "../images/logo.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -1,6 +1,6 @@
 // import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/logo465x320.png"
+import logo from "../images/logo.png"
 
 const Header = () => (
   <header
