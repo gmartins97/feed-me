@@ -1,15 +1,32 @@
 import React from "react"
-import { Navbar, Nav } from 'react-bootstrap'
+import { Link } from "gatsby"
+
+import styles from "../styles/navbar.module.scss"
+
+import logo from "../images/logo.png"
 
 const NavBar = () => {
     return (
-        <Navbar bg="dark" variant="dark" sticky="top">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Nav className="m-auto">
-            <Nav.Link href="#menu">Menu</Nav.Link>
-            <Nav.Link href="#contacts">Contacts</Nav.Link>
-        </Nav>
-        </Navbar>
+        /*<Navbar className="justify-content-center" bg="dark" variant="dark" sticky="top">
+            <Nav className={styles.logo}>
+                <Nav.Link href="#menu" className={styles.link}>Menu</Nav.Link>
+
+                <Navbar.Brand>
+                    <img className={styles.logo} src={logo} alt="Logo"/>
+                </Navbar.Brand>
+                
+                <Nav.Link href="#contacts">Contacts</Nav.Link>
+            </Nav>
+        </Navbar>*/
+
+        // <div className={`"fixed-bottom" ${styles.carousel}`}>  
+ 
+        <div className={styles.container}>
+            <Link to="/menu"><h1 className={`${styles.navbarLink} ${styles.navbarRow}`}>Menu</h1></Link>
+            <Link to="/"><div className={styles.navbarRow}><img className={styles.navbarLogo} src={logo} alt="Logo"/></div></Link>
+            <Link to="/contacts"><h1 className={`${styles.navbarLink} ${styles.navbarRow}`}>Contacts</h1></Link>
+        </div>
+
     )
 }
 

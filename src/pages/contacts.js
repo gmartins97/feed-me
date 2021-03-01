@@ -3,16 +3,16 @@ import React from "react"
 import Base from "../components/base"
 import NavBar from "../components/navbar"
 
-const Index = () => {
+const Contacts = () => {
   return (
-    <div>
+    <>
       {/* Place base */}
       <Base></Base>
 
       {/* Place navbar */}
       <NavBar></NavBar>
-    </div>
+    </>
   )
 }
 
-export default Index
+export default Contacts

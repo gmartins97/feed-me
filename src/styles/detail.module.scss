@@ -1,0 +1,42 @@
+$body-font-family: "Lato";
+$header-font-family: "Montserrat";
+
+.title {
+    text-align: right;
+    color: white;
+    margin-top: 40px;
+}
+
+.horizontal-line {
+    color: white;
+    background-color: white;
+    height: 5;
+}
+
+.meal {
+    color: white;
+}
+
+.meal-image {
+    min-height: 300px;
+}
+
+.meal-info {
+    margin-top: 20px;
+}
+
+.meal-title {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.meal-price {
+    font-size: 1.25em;
+}
+
+.meal-description {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}

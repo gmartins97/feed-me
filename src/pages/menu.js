@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from "gatsby"
 
 import Base from "../components/base"
 import NavBar from "../components/navbar"
@@ -17,12 +18,12 @@ import drinks from "../images/drinks.jpg"
 const Categories = () => {
 
     const cards = [
-        { "image": entrees, "title": "Entrees" },
-        { "image": salads, "title": "Salads" },
-        { "image": meat, "title": "Meat" },
-        { "image": fish, "title": "Fish" },
-        { "image": desserts, "title": "Desserts" },
-        { "image": drinks, "title": "Drinks" }
+        { "image": entrees, "title": "Entrees", "page": "entrees" },
+        { "image": salads, "title": "Salads", "page": "salads" },
+        { "image": meat, "title": "Meat", "page": "meat" },
+        { "image": fish, "title": "Fish", "page": "fish" },
+        { "image": desserts, "title": "Desserts", "page": "desserts" },
+        { "image": drinks, "title": "Drinks", "page": "drinks" }
     ];
 
     const transformCardsIntoGrid = (cards) => {
@@ -64,7 +65,7 @@ const Categories = () => {
 
                                 return (
                                     <Col className={styles.cellMargin} key={cellIndex}>
-                                        <Category card={column} index={cellIndex}></Category>
+                                        <Link to={column.page}><Category card={column} index={cellIndex}></Category></Link>
                                     </Col>
                                 )
                             })}
@@ -75,20 +76,20 @@ const Categories = () => {
         )
     }
 
-return (
-    <>
+    return (
+        <>
 
-        {/* Place base */}
-        <Base></Base>
+            {/* Place base */}
+            <Base></Base>
 
-        {/* Place navbar */}
-        <NavBar></NavBar>
+            {/* Place navbar */}
+            <NavBar></NavBar>
 
-        {/* Place categories */}
-        {renderGrid()}
+            {/* Place categories */}
+            {renderGrid()}
 
-    </>
-)
+        </>
+    )
 }
 
 export default Categories
