@@ -2,6 +2,7 @@ import React from "react"
 
 import Base from "../components/base"
 import NavBar from "../components/navbar"
+import Address from "../components/address"
 
 const Index = () => {
   return (
@@ -11,6 +12,9 @@ const Index = () => {
 
       {/* Place navbar */}
       <NavBar></NavBar>
+
+      {/* Place address */}
+      <Address></Address>
     </div>
   )
 }

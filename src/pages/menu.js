@@ -1,12 +1,13 @@
 import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Base from "../components/base"
 import NavBar from "../components/navbar"
+import Address from "../components/address"
 import Category from "../components/category"
-import styles from "../styles/categories.module.css"
-import "../styles/categories.scss"
+
+import styles from "../styles/menu.module.scss"
 
 import entrees from "../images/entrees.jpg"
 import salads from "../images/salads.jpg"
@@ -25,6 +26,15 @@ const Categories = () => {
         { "image": desserts, "title": "Desserts", "page": "desserts" },
         { "image": drinks, "title": "Drinks", "page": "drinks" }
     ];
+
+    const header = () => {       
+        return (
+            <div>
+                <h1 className={styles.title}>Menu</h1>
+                <hr className={styles.horizontalLine} />
+            </div>
+        )
+    }
 
     const transformCardsIntoGrid = (cards) => {
         let numberOfColumns = 2;
@@ -65,7 +75,7 @@ const Categories = () => {
 
                                 return (
                                     <Col className={styles.cellMargin} key={cellIndex}>
-                                        <Link to={column.page}><Category card={column} index={cellIndex}></Category></Link>
+                                        <AniLink cover to={column.page} direction="left" bg="#292b2c"><Category card={column} index={cellIndex}></Category></AniLink>
                                     </Col>
                                 )
                             })}
@@ -85,9 +95,16 @@ const Categories = () => {
             {/* Place navbar */}
             <NavBar></NavBar>
 
-            {/* Place categories */}
-            {renderGrid()}
+            {/* Place address */}
+            <Address></Address>
 
+            <Container>
+                {/* Place header */}
+                {header()}
+
+                {/* Place categories */}
+                {renderGrid()}
+            </Container>
         </>
     )
 }

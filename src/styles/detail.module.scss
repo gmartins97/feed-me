@@ -1,5 +1,11 @@
-$body-font-family: "Lato";
-$header-font-family: "Montserrat";
+.container-margin {
+    margin: 20px 0 0 0;
+}
+
+.cell-margin {
+    border-color: transparent;
+    margin: 0 0 20px 0;
+}
 
 .title {
     text-align: right;
@@ -11,6 +17,7 @@ $header-font-family: "Montserrat";
     color: white;
     background-color: white;
     height: 5;
+    margin-bottom: 40px;
 }
 
 .meal {
@@ -19,6 +26,7 @@ $header-font-family: "Montserrat";
 
 .meal-image {
     min-height: 300px;
+    max-width: 1000px;
 }
 
 .meal-info {
@@ -39,4 +47,13 @@ $header-font-family: "Montserrat";
     text-align: center;
     font-style: italic;
     margin-top: 20px;
+}
+
+.carousel {
+    max-height: 100px;
+    margin: 0 -26px;
+}
+
+.card {
+    margin: 0 26px;
 }

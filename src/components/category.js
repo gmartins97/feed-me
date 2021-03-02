@@ -1,5 +1,7 @@
 import React from "react"
 
+import styles from "../styles/category.module.scss"
+
 /*import { Card } from 'react-bootstrap'*/
 
 const Category = (props) => {
@@ -13,12 +15,12 @@ const Category = (props) => {
                 </Card.ImgOverlay>
             </Card>*/
 
-            <div className="card" key={props.index}>
-                <div className="card__image">
-                    <img src={props.card.image} alt="" />
-                    <div className="card__overlay card__overlay--indigo">
-                        <div className="card__overlay-content">
-                            <a href="#0" className="card__title">{props.card.title}</a>
+            <div className={styles.card} key={props.index}>
+                <div className={styles.cardImage}>
+                    <img className={styles.cardImageSize} src={props.card.image} alt="" />
+                    <div className={`${styles.cardOverlay} ${styles.cardOverlayGrey}`}>
+                        <div className={styles.cardOverlayContent}>
+                            <h1 className={styles.cardTitle}>{props.card.title}</h1>
                         </div>
                     </div>
                 </div>

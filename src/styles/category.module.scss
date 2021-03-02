@@ -1,0 +1,83 @@
+$grey: #292b2c;
+
+.card {
+    margin: 0 0 20px 0;
+    border: none !important;
+}
+
+.card-image {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+
+    overflow: hidden;
+    position: relative;
+
+    > img {
+        display: block;
+        margin-bottom: 0;
+
+        -webkit-transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+        -o-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+    }
+
+    &:hover > img {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.card-image-size {
+    width: 100%;
+}  
+
+.card-overlay {
+    content: "";
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.card-overlay-grey {
+    background-image: linear-gradient(to bottom, rgba($grey, 0.1), rgba($grey, 0.8));
+    z-index: 2;
+}
+
+.card-overlay-content {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5em;
+    z-index: 3;
+}
+
+.card-title {
+    color: white;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.75em;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+
+    &:hover {
+        color: rgba(white, 0.7);
+        text-decoration: none;
+    }
+}
