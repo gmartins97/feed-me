@@ -37,12 +37,13 @@ const Categories = () => {
     }
 
     const transformCardsIntoGrid = (cards) => {
-        let numberOfColumns = 2;
+        const numberOfColumns = 3;
+
+        let cardsGrid = [];
+        while (cards.length) cardsGrid = [...cardsGrid, cards.splice(0, numberOfColumns)];
 
         return (
-            cards.reduce(function (rows, key, index) {
-                return ((index % numberOfColumns === 0) ? rows.push([key]) : rows[rows.length - 1].push(key)) && rows;
-            }, [])
+            cardsGrid
         )
     }
 
@@ -69,7 +70,7 @@ const Categories = () => {
             <Container className={styles.containerMargin}>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
-                        <Row xs={1} xl={2} key={rowIndex}>
+                        <Row xs={1} xl={3} key={rowIndex}>
                             {row.map(column => {
                                 cellIndex++;
 
