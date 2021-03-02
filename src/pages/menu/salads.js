@@ -53,6 +53,7 @@ const Salads = () => {
                 {/* Place detail */}
                 <Detail items={items}></Detail>
             </Container>
+            
         </>
     )
 }

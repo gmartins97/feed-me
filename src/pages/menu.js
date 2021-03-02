@@ -16,7 +16,7 @@ import fish from "../images/fish.jpg"
 import desserts from "../images/desserts.jpg"
 import drinks from "../images/drinks.jpg"
 
-const Categories = () => {
+const Menu = () => {
 
     const cards = [
         { "image": entrees, "title": "Entrees", "page": "entrees" },
@@ -106,8 +106,9 @@ const Categories = () => {
                 {/* Place categories */}
                 {renderGrid()}
             </Container>
+            
         </>
     )
 }
 
-export default Categories
+export default Menu
