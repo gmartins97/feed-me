@@ -6,11 +6,7 @@ import Category from "../components/category"
 
 import styles from "../styles/detail.module.scss"
 
-import drinks from "../images/drinks.jpg"
-
 const Detail = (props) => {
-
-    const card = { "image": drinks, "title": "Drinks", "page": "drinks" };
 
     const highlight = ({items}) => {
         return (

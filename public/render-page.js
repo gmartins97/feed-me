@@ -57927,7 +57927,7 @@ __webpack_require__.r(__webpack_exports__);
 const Address = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
     className: "justify-content-center",
-    bg: "dark",
+    bg: "secondary",
     variant: "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Text, {
     className: _styles_address_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.address
@@ -58246,7 +58246,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Categories = () => {
+const Menu = () => {
   const cards = [{
     "image": _images_entrees_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
     "title": "Entrees",
@@ -58336,7 +58336,7 @@ const Categories = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_base__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_address__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, header(), renderGrid()));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Categories);
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 
