@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@wapps/gatsby-plugin-i18next": "^1.1.6",
     "bootstrap": "^4.6.0",
     "gatsby": "^2.32.8",
     "gatsby-image": "^2.5.0",
@@ -13,7 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sharp": "^2.8.0",
-    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-sharp": "^2.6.0",
     "gsap": "^3.6.0",
     "prop-types": "^15.7.2",
@@ -21,6 +22,7 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.8",
     "react-slick": "^0.28.0",
     "sass": "^1.32.8"
   },

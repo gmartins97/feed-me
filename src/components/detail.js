@@ -6,9 +6,9 @@ import Category from "../components/category"
 
 import styles from "../styles/detail.module.scss"
 
-const Detail = (props) => {
+const Detail = ({ items }) => {
 
-    const highlight = ({items}) => {
+    const highlight = ({ items }) => {
         return (
             <Row xs={1}>
                 <Col className={styles.cellMargin}>
@@ -30,8 +30,8 @@ const Detail = (props) => {
         )
     }
 
-    const carousel = (props) => {
-        var settings = {
+    const carousel = ({ items }) => {
+        const settings = {
             className: "center",
             centerMode: true,
             dots: false,
@@ -44,7 +44,7 @@ const Detail = (props) => {
         return (
             <div className={`${styles.carousel} "fixed-bottom"`}>
                 <Slider {...settings}>
-                    {props.items.map(item => {
+                    {items.map(item => {
                         return (
                             <div className={styles.card} key={item.key}>
                                 <Image src={item.image} fluid />
@@ -58,10 +58,8 @@ const Detail = (props) => {
 
     return (
         <>
-
-            {highlight(props)}
-            {carousel(props)}
-
+            {highlight({ items })}
+            {carousel({ items })}
         </>
     )
 }
