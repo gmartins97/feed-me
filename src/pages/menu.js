@@ -37,13 +37,12 @@ const Menu = () => {
     }
 
     const transformCardsIntoGrid = (cards) => {
-        const numberOfColumns = 3;
-
-        let cardsGrid = [];
-        while (cards.length) cardsGrid = [...cardsGrid, cards.splice(0, numberOfColumns)];
+        let numberOfColumns = 2;
 
         return (
-            cardsGrid
+            cards.reduce(function (rows, key, index) {
+                return ((index % numberOfColumns === 0) ? rows.push([key]) : rows[rows.length - 1].push(key)) && rows;
+            }, [])
         )
     }
 
@@ -51,26 +50,10 @@ const Menu = () => {
         let cellIndex = 0;
 
         return (
-            /*<Container className={styles.containerMargin}>
-                {transformCardsIntoGrid(cards).map((row, rowIndex) => {
-                    return (
-                        <Row xs={1} xl={2} key={rowIndex}>
-                            {row.map(column => {
-                                cellIndex++;
-
-                                return (
-                                    <Col className={`${styles.cellMargin} ${styles.shadowBox} "shadow-lg"`} key={cellIndex}><Category card={column} index={cellIndex}></Category></Col>
-                                )
-                            })}
-                        </Row>
-                    )
-                })}
-            </Container>*/
-
             <Container className={styles.containerMargin}>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
-                        <Row xs={1} xl={3} key={rowIndex}>
+                        <Row xs={1} xl={2} key={rowIndex}>
                             {row.map(column => {
                                 cellIndex++;
 
@@ -99,7 +82,7 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container>
+            <Container className={styles.bannerArea}>
                 {/* Place header */}
                 {header()}
 

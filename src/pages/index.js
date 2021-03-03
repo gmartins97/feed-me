@@ -4,9 +4,12 @@ import Base from "../components/base"
 import NavBar from "../components/navbar"
 import Address from "../components/address"
 
+import styles from "../styles/index.module.scss"
+
 const Index = () => {
   return (
-    <div>
+    <>
+
       {/* Place base */}
       <Base></Base>
 
@@ -15,7 +18,10 @@ const Index = () => {
 
       {/* Place address */}
       <Address></Address>
-    </div>
+
+      <div className={styles.estupido}></div>
+
+    </>
   )
 }
 

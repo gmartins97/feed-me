@@ -1,3 +1,15 @@
 .navbar {
-   max-height: 80px;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #343a40;
+	width: 100%;
+	max-height: 100px;
+	z-index: 5;
+}
+
+.logo {
+	max-height: 80px;
+	margin: 10px;
 }
