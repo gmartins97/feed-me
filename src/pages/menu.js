@@ -50,7 +50,7 @@ const Menu = () => {
         let cellIndex = 0;
 
         return (
-            <Container className={styles.containerMargin}>
+            <Container className={styles.containerMargin} style={{ 'max-width': '100%' }}>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
                         <Row xs={1} xl={2} key={rowIndex}>
@@ -71,8 +71,7 @@ const Menu = () => {
     }
 
     return (
-        <>
-
+        <div>
             {/* Place base */}
             <Base></Base>
 
@@ -82,15 +81,14 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container className={styles.bannerArea}>
+            <Container style={{ 'max-width': '75%'}}>
                 {/* Place header */}
                 {header()}
 
                 {/* Place categories */}
                 {renderGrid()}
             </Container>
-            
-        </>
+        </div>
     )
 }
 
