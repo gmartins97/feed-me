@@ -26,7 +26,7 @@ module.exports = {
       resolve: '@wapps/gatsby-plugin-i18next',
       options: {
         availableLngs: ['pt', 'en', 'fr', 'es', 'it', 'de'],
-        fallbackLng: 'pt',
+        fallbackLng: 'en',
         i18nextOptions: {
           debug: false,
         },

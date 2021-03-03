@@ -37,7 +37,7 @@ const Menu = () => {
     }
 
     const transformCardsIntoGrid = (cards) => {
-        let numberOfColumns = 2;
+        let numberOfColumns = 3;
 
         return (
             cards.reduce(function (rows, key, index) {
@@ -53,7 +53,7 @@ const Menu = () => {
             <Container className={styles.containerMargin} style={{ 'max-width': '100%' }}>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
-                        <Row xs={1} xl={2} key={rowIndex}>
+                        <Row xs={1} xl={3} key={rowIndex}>
                             {row.map(column => {
                                 cellIndex++;
 
@@ -81,7 +81,7 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container style={{ 'max-width': '75%'}}>
+            <Container style={{ 'maxWidth': '75%'}}>
                 {/* Place header */}
                 {header()}
 
