@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `feed-me`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@limadelrey, @thegoncalomartins`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -13,6 +13,23 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/locale`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: '@wapps/gatsby-plugin-i18next',
+      options: {
+        availableLngs: ['pt', 'en', 'fr', 'es', 'it', 'de'],
+        fallbackLng: 'pt',
+        i18nextOptions: {
+          debug: false,
+        },
       },
     },
     `gatsby-transformer-sharp`,
