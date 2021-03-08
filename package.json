@@ -21,14 +21,20 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.12.0",
+    "react-flag-icon-css": "^1.0.25",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.8.8",
     "react-slick": "^0.28.0",
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
     "gatsby-plugin-transition-link": "^1.20.5",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "style-loader": "^2.0.0"
   },
   "keywords": [
     "gatsby"
