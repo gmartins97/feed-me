@@ -50,10 +50,10 @@ const Menu = () => {
         let cellIndex = 0;
 
         return (
-            <Container className={styles.containerMargin} style={{ 'max-width': '100%' }}>
+            <Container>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
-                        <Row xs={1} xl={3} key={rowIndex}>
+                        <Row xs={1} md={3} key={rowIndex}>
                             {row.map(column => {
                                 cellIndex++;
 
@@ -81,7 +81,7 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container style={{ 'maxWidth': '75%'}}>
+            <Container>
                 {/* Place header */}
                 {header()}
 

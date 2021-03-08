@@ -1,16 +1,7 @@
-.container-margin {
-    margin: 20px 0 0 0;
-}
-
-.cell-margin {
-    border-color: transparent;
-    margin: 0 0 20px 0;
-}
-
 .title {
     text-align: right;
     color: white;
-    margin-top: 190px !important;
+    margin-top: 100px !important;
 }
 
 .horizontal-line {
@@ -21,12 +12,11 @@
 }
 
 .meal {
-    color: white;
+    color: black;
 }
 
 .meal-image {
-    min-height: 300px;
-    max-width: 1000px;
+    max-height: 40vh;
 }
 
 .meal-info {
@@ -47,22 +37,4 @@
     text-align: center;
     font-style: italic;
     margin-top: 20px;
-}
-
-.carousel {
-    max-height: 100px;
-    margin: 0 -26px;
-}
-
-.card {
-    margin: 0 26px;
-}
-
-.estupido {
-    height: 1200px;
-    background-color: white;
-}
-
-.top {
-    top: 0;
 }

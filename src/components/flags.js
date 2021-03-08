@@ -15,7 +15,7 @@ const flags = [
 
 const Flags = () => (
     <div>
-        {flags.map(flag => <FlagIcon code={flag} size='2x' />)}
+        {flags.map(flag => <FlagIcon code={flag} size='1x' />)}
     </div>
 )
 

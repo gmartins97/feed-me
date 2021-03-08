@@ -46,7 +46,7 @@ const Entrees = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container className={styles.containerMargin}>
+            <Container>
                 {/* Place header */}
                 {header()}
 
