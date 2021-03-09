@@ -16,23 +16,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/locale`,
-        name: `locale`,
-      },
-    },
-    {
-      resolve: '@wapps/gatsby-plugin-i18next',
-      options: {
-        availableLngs: ['pt', 'en', 'fr', 'es', 'it', 'de'],
-        fallbackLng: 'en',
-        i18nextOptions: {
-          debug: false,
-        },
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -47,6 +30,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        // add relative path to your layout component
+        component: `${__dirname}/src/components/layout.js`
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
