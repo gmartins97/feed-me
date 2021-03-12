@@ -8,9 +8,10 @@ const Layout = ({ children, t, i18n }) => {
             <div>
                 <main>{children}</main>
             </div>
-            <footer>
+
+{/*             <footer>
                 © {new Date().getFullYear()}, {'feed-me'}
-            </footer>
+            </footer> */}
         </>
     )
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { Image } from 'react-bootstrap'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import styles from "../styles/navbar.module.scss"
+import * as styles from "../styles/navbar.module.scss"
 
 import logo from "../images/logo.png"
 

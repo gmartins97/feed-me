@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import styles from "../styles/address.module.scss"
+import * as styles from "../styles/address.module.scss"
 import Flags from "./flags"
 
 const Address = () => {

@@ -6,7 +6,7 @@ import NavBar from "../../components/navbar"
 import Address from "../../components/address"
 import Detail from "../../components/detail"
 
-import styles from "../../styles/detail.module.scss"
+import * as styles from "../../styles/detail.module.scss"
 
 import salads from "../../images/salads.jpg"
 import entrees from "../../images/entrees.jpg"
@@ -46,7 +46,7 @@ const Fish = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container className={styles.containerMargin}>
+            <Container>
                 {/* Place header */}
                 {header()}
 

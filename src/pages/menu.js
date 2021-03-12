@@ -7,7 +7,7 @@ import NavBar from "../components/navbar"
 import Address from "../components/address"
 import Category from "../components/category"
 
-import styles from "../styles/menu.module.scss"
+import * as styles from "../styles/menu.module.scss"
 
 import entrees from "../images/entrees.jpg"
 import salads from "../images/salads.jpg"

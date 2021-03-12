@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "../styles/category.module.scss"
+import * as styles from "../styles/category.module.scss"
 
 /*import { Card } from 'react-bootstrap'*/
 

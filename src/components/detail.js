@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react"
 import Slider from "react-slick";
-import { Row, Col, Image } from 'react-bootstrap'
 
-import Category from "../components/category"
+import * as styles from "../styles/detail.module.scss"
 
-import styles from "../styles/detail.module.scss"
 import "../styles/global.scss"
 
 const Detail = ({ items }) => {
@@ -21,28 +19,6 @@ const Detail = ({ items }) => {
 
     });
 
-    const highlight = ({ items }) => {
-        return (
-            <Row>
-                <Col className={styles.cellMargin}>
-                    <Category card={items[0]}></Category>
-                </Col>
-            </Row>
-
-            /*<div className={styles.meal}>
-                <Image className={styles.mealImage} src={items[0].image} />
-                <div>
-                    <div>
-                        <div className={styles.mealTitle}>{items[0].name}</div>
-                    </div>
-                    <div>
-                        <div className={styles.mealPrice}>{items[0].price}</div>
-                    </div>
-                </div>
-            </div>*/
-        )
-    }
-
     const carousel = ({ items }) => {
         const settingsMain = {
             slidesToShow: 1,
@@ -53,10 +29,11 @@ const Detail = ({ items }) => {
         };
 
         const settingsThumbs = {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
+            arrows: true,
             centerMode: true,
             swipeToSlide: false,
             focusOnSelect: true,
@@ -65,18 +42,32 @@ const Detail = ({ items }) => {
 
         return (
             <div className="App">
-                <div className="slider-wrapper">
+                <div>
                     <Slider
                         {...settingsMain}
                         asNavFor={nav2}
                         ref={slider => (setSlider1(slider))}>
 
                         {items.map((item) =>
-                            <div className="slick-slide" key={item.key}>
-                                <h2 className="slick-slide-title">{item.title}</h2>
-                                <img className="slick-slide-image" src={item.image} />
-                                <label className="slick-slide-label">{item.name}</label>
+                        <div>
+                            <div key={item.key}>
+                                <img className="slick-slide-image" src={item.image} alt="highlight" />
                             </div>
+
+                            <div>
+                                <div className={styles.meal}>
+                                    <div>
+                                        <div className={styles.mealTitle}>{item.name}</div>
+                                    </div>
+                                    <div>
+                                        <div className={styles.mealPrice}>{item.price}</div>
+                                    </div>
+                                </div>
+                                {/*<div>
+                                    <div className={styles.mealDescription}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                </div>*/}
+                            </div>
+                        </div>
                         )}
                     </Slider>
                     
@@ -88,7 +79,7 @@ const Detail = ({ items }) => {
 
                         {items.map((item) =>
                             <div className="slick-slide" key={item.key}>
-                                <img className="slick-slide-image" src={item.image} alt="" />
+                                <img className="slick-slide-image" src={item.image} alt="carousel" />
                             </div>
 
                         )}

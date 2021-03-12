@@ -1,18 +1,18 @@
 .title {
     text-align: right;
     color: white;
-    margin-top: 100px !important;
+    margin-top: 80px !important;
 }
 
 .horizontal-line {
     color: white;
     background-color: white;
     height: 5;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .meal {
-    color: black;
+    display: flex;
 }
 
 .meal-image {
@@ -24,17 +24,30 @@
 }
 
 .meal-title {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
+    color: white;
+    float: left;
+    max-width: 75%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .meal-price {
-    font-size: 1.25em;
+    margin-top: 10px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .meal-description {
     text-align: center;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
 }

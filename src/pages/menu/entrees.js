@@ -6,7 +6,7 @@ import NavBar from "../../components/navbar"
 import Address from "../../components/address"
 import Detail from "../../components/detail"
 
-import styles from "../../styles/detail.module.scss"
+import * as styles from "../../styles/detail.module.scss"
 
 import salads from "../../images/salads.jpg"
 import entrees from "../../images/entrees.jpg"
@@ -16,9 +16,9 @@ const Entrees = () => {
 
     const items = [
         { "key": 1, "image": salads, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
-        { "key": 2, "image": entrees, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
+        { "key": 2, "image": entrees, "name": "Salada", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
         { "key": 3, "image": meat, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
-        { "key": 4, "image": entrees, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
+        { "key": 4, "image": entrees, "name": "Salada", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
         { "key": 5, "image": salads, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
         { "key": 6, "image": entrees, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
         { "key": 7, "image": salads, "name": "Sandes de pernil com queijo", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
