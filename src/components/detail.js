@@ -13,11 +13,9 @@ const Detail = ({ items }) => {
     const [slider2, setSlider2] = useState(null);
 
     useEffect(() => {
-
-    setNav1(slider1);
-    setNav2(slider2);
-
-    });
+        setNav1(slider1);
+        setNav2(slider2);
+    }, [slider1, slider2])
 
     const carousel = ({ items }) => {
         const settingsMain = {

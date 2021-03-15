@@ -45,7 +45,7 @@ const countries = [
 ]
 
 const Flags = (props) => {
-    const { t, i18n } = useTranslation()
+    const { i18n } = useTranslation()
     const classes = useStyles()
 
     const [values, setValues] = useState({

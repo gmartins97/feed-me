@@ -46,11 +46,11 @@ const Menu = () => {
         )
     }
 
-    const renderGrid = () => {
+    const menu = () => {
         let cellIndex = 0;
 
         return (
-            <Container>
+            <div>
                 {transformCardsIntoGrid(cards).map((row, rowIndex) => {
                     return (
                         <Row xs={1} md={3} key={rowIndex}>
@@ -66,7 +66,7 @@ const Menu = () => {
                         </Row>
                     )
                 })}
-            </Container>
+            </div>
         )
     }
 
@@ -81,13 +81,15 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container>
-                {/* Place header */}
-                {header()}
+            <div className={styles.container}>
+                <Container >
+                    {/* Place header */}
+                    {header()}
 
-                {/* Place categories */}
-                {renderGrid()}
-            </Container>
+                    {/* Place categories */}
+                    {menu()}
+                </Container>
+            </div>
         </div>
     )
 }

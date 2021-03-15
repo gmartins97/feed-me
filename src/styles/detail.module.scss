@@ -1,7 +1,31 @@
-.title {
-    text-align: right;
+.container {
+    height: 90vh;
+}
+
+.header {
+    padding-top: 20px;
     color: white;
-    margin-top: 80px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.back {
+    display: inline-block;
+    flex: 1;
+}
+
+.title {
+    display: inline-block;
+}
+
+.link {
+    color:white;
+}
+
+.link:hover {
+    color:white;
 }
 
 .horizontal-line {
