@@ -1,10 +1,10 @@
-import React from "react"
-import { Image } from 'react-bootstrap'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from "react";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Image } from 'react-bootstrap';
 
-import * as styles from "../styles/navbar.module.scss"
+import logo from "../images/logo.png";
 
-import logo from "../images/logo.png"
+import * as styles from "../styles/navbar.module.scss";
 
 const NavBar = () => {
     return (

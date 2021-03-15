@@ -1,11 +1,11 @@
-import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from "react";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import Address from "../components/address"
-import Base from "../components/base"
-import NavBar from "../components/navbar"
+import Base from "../components/base";
+import NavBar from "../components/navbar";
+import Address from "../components/address";
 
-import * as styles from "../styles/index.module.scss"
+import * as styles from "../styles/index.module.scss";
 
 const Index = () => {
   return (

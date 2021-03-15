@@ -1,19 +1,18 @@
 import React from "react"
-import { Container} from 'react-bootstrap'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
+import { Container } from 'react-bootstrap'
 
 import Base from "../../components/base"
 import NavBar from "../../components/navbar"
 import Address from "../../components/address"
 import Detail from "../../components/detail"
 
-import * as styles from "../../styles/detail.module.scss"
-
 import salads from "../../images/salads.jpg"
 import entrees from "../../images/entrees.jpg"
 import meat from "../../images/meat.jpg"
 
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import * as styles from "../../styles/detail.module.scss"
 
 const Desserts = () => {
 

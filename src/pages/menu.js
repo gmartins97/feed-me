@@ -1,13 +1,11 @@
 import React from "react"
-import { Container, Row, Col } from 'react-bootstrap'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Container, Row, Col } from 'react-bootstrap'
 
 import Base from "../components/base"
 import NavBar from "../components/navbar"
 import Address from "../components/address"
 import Category from "../components/category"
-
-import * as styles from "../styles/menu.module.scss"
 
 import entrees from "../images/entrees.jpg"
 import salads from "../images/salads.jpg"
@@ -15,6 +13,8 @@ import meat from "../images/meat.jpg"
 import fish from "../images/fish.jpg"
 import desserts from "../images/desserts.jpg"
 import drinks from "../images/drinks.jpg"
+
+import * as styles from "../styles/menu.module.scss"
 
 const Menu = () => {
 
