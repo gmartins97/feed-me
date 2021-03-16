@@ -1,6 +1,7 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
+import { Helmet } from "react-helmet"
 import { Container } from 'react-bootstrap'
 
 import Base from "../../components/base"
@@ -22,12 +23,12 @@ const Entrees = () => {
         { "key": 3, "image": meat, "name": "Chicha", "price": "30€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" }
     ];
 
-    const header = () => {       
+    const header = () => {
         return (
             <div>
                 <div className={styles.header}>
                     <div className={styles.back}>
-                    <   AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.5}><ArrowBackIosIcon color="white"></ArrowBackIosIcon></AniLink>
+                        <   AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.75}><ArrowBackIosIcon color="white"></ArrowBackIosIcon></AniLink>
                     </div>
                     <div className={styles.title}>
                         <h1>Entrees</h1>
@@ -40,7 +41,11 @@ const Entrees = () => {
     }
 
     return (
-        <>
+        <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Entrees</title>
+            </Helmet>
 
             {/* Place base */}
             <Base></Base>
@@ -58,8 +63,7 @@ const Entrees = () => {
                 {/* Place detail */}
                 <Detail items={items}></Detail>
             </Container>
-            
-        </>
+        </div>
     )
 }
 

@@ -9,7 +9,7 @@ import * as styles from "../styles/navbar.module.scss";
 const NavBar = () => {
     return (
         <div className={styles.navbar}>
-            <AniLink cover to="/" direction="up" bg="#292b2c" duration={0.5}><Image className={styles.logo} src={logo} rounded/></AniLink>
+            <AniLink cover to="/" direction="up" bg="#292b2c" duration={0.75}><Image className={styles.logo} src={logo} rounded/></AniLink>
         </div>
     )
 }

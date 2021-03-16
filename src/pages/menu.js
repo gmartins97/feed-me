@@ -1,5 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Helmet } from "react-helmet"
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Base from "../components/base"
@@ -59,7 +60,7 @@ const Menu = () => {
 
                                 return (
                                     <Col className={styles.cellMargin} key={cellIndex}>
-                                        <AniLink cover to={column.page} direction="left" bg="#292b2c" duration={0.5}><Category card={column} index={cellIndex}></Category></AniLink>
+                                        <AniLink cover to={column.page} direction="left" bg="#292b2c" duration={0.75}><Category card={column} index={cellIndex}></Category></AniLink>
                                     </Col>
                                 )
                             })}
@@ -72,6 +73,11 @@ const Menu = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Menu</title>
+            </Helmet>
+
             {/* Place base */}
             <Base></Base>
 

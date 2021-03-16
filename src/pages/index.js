@@ -1,5 +1,6 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Helmet } from "react-helmet"
 import { Image } from 'react-bootstrap';
 
 import Base from "../components/base";
@@ -13,6 +14,11 @@ import * as styles from "../styles/index.module.scss";
 const Index = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
+
       {/* Place base */}
       <Base></Base>
 
@@ -30,7 +36,7 @@ const Index = () => {
         </div>
 
         <div>
-          <AniLink cover to="/menu" direction="down" bg="#292b2c" duration={0.5}>
+          <AniLink cover to="/menu" direction="down" bg="#292b2c" duration={0.75}>
             <div className={styles.button}>Menu</div>
           </AniLink>
         </div>
