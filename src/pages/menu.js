@@ -59,7 +59,7 @@ const Menu = () => {
 
                                 return (
                                     <Col className={styles.cellMargin} key={cellIndex}>
-                                        <AniLink cover to={column.page} direction="left" bg="#292b2c"><Category card={column} index={cellIndex}></Category></AniLink>
+                                        <AniLink cover to={column.page} direction="left" bg="#292b2c" duration={0.5}><Category card={column} index={cellIndex}></Category></AniLink>
                                     </Col>
                                 )
                             })}

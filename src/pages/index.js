@@ -30,7 +30,7 @@ const Index = () => {
         </div>
 
         <div>
-          <AniLink cover to="/menu" direction="down" bg="#292b2c">
+          <AniLink cover to="/menu" direction="down" bg="#292b2c" duration={0.5}>
             <div className={styles.button}>Menu</div>
           </AniLink>
         </div>

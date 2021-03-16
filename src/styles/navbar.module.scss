@@ -13,3 +13,15 @@
 .logo {
 	max-height: 5vh;
 }
+
+@media screen and (min-width: 0px) {
+    .navbar {
+        height: 9vh;
+    }
+}
+ 
+ @media screen and (min-width: 720px) {
+    .navbar {
+        height: 6vh;
+    }
+}

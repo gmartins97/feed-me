@@ -27,7 +27,7 @@ const Salads = () => {
             <div>
                 <div className={styles.header}>
                     <div className={styles.back}>
-                        <AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link}><ArrowBackIosIcon color="white"></ArrowBackIosIcon></AniLink>
+                        <AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.5}><ArrowBackIosIcon color="white"></ArrowBackIosIcon></AniLink>
                     </div>
                     <div className={styles.title}>
                         <h1>Salads</h1>
