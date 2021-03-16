@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     title: "feed-me",
     author: "@limadelrey, @thegoncalomartins",

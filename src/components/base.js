@@ -1,6 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
+import "../styles/base.global.scss"
+
 const Base = () => {
     return (
         <Helmet>
@@ -28,7 +30,16 @@ const Base = () => {
             />
             
             {/* Set background color */}
-            { <style>{'body { background-color: #292b2c; }'}</style> }
+            { <style>{`
+                body {
+                    background-color: #292b2c;
+                    color: hsla(0, 0%, 0%, 0.8);
+                    font-family: "Airbnb Cereal App Bold", georgia, serif;
+                    font-weight: normal;
+                    word-wrap: break-word;
+                    font-kerning: normal;
+                }        
+            `}</style> }
         </Helmet>
       )
 }

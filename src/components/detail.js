@@ -27,7 +27,7 @@ const Detail = ({ items }) => {
         };
 
         const settingsThumbs = {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
@@ -39,38 +39,37 @@ const Detail = ({ items }) => {
         };
 
         return (
-            <div>
+            <div className="App">
                 <div>
-                    <div className={styles.highlight}>
-                        <Slider
-                            {...settingsMain}
-                            asNavFor={nav2}
-                            ref={slider => (setSlider1(slider))}>
+                    <Slider
+                        {...settingsMain}
+                        asNavFor={nav2}
+                        ref={slider => (setSlider1(slider))}>
 
-                            {items.map((item) =>
+                        {items.map((item) =>
+                        <div key={item.key}>
                             <div>
-                                <div key={item.key}>
-                                    <img className="slick-slide-image-highlight" src={item.image} alt="highlight" />
-                                </div>
-
-                                <div>
-                                    <div className={styles.meal}>
-                                        <div>
-                                            <div className={styles.mealTitle}>{item.name}</div>
-                                        </div>
-                                        <div>
-                                            <div className={styles.mealPrice}>{item.price}</div>
-                                        </div>
-                                    </div>
-                                    {/*<div>
-                                        <div className={styles.mealDescription}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
-                                    </div>*/}
-                                </div>
+                                <img className="slick-slide-image-highlight" src={item.image} alt="highlight" key={item.key}/>
                             </div>
-                            )}
-                        </Slider>              
-                    </div>
 
+                            <div>
+                                <div className={styles.meal}>
+                                    <div>
+                                        <div className={styles.mealTitle}>{item.name}</div>
+                                    </div>
+                                    <div>
+                                        <div className={styles.mealPrice}>{item.price}</div>
+                                    </div>
+                                </div>
+
+                                {/*<div>
+                                    <div className={styles.mealDescription}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                </div>*/}
+                            </div>
+                        </div>
+                        )}
+                    </Slider>
+                    
                     <div className="thumbnail-slider-wrap">
                         <Slider
                         {...settingsThumbs}
@@ -79,7 +78,7 @@ const Detail = ({ items }) => {
 
                         {items.map((item) =>
                             <div className="slick-slide" key={item.key}>
-                                <img className="slick-slide-image" src={item.image} alt="carousel" />
+                                <img className="slick-slide-image" src={item.image} alt="carousel" key={item.key} />
                             </div>
 
                         )}

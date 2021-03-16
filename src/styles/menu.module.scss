@@ -15,25 +15,32 @@
 
 .cell-margin {
     border-color: transparent;
-    margin: 0 0 20px 0;
 }
 
 @media screen and (min-width: 0px) {
-    .title {
-        padding-top: 20px;
-    }
-
-    .horizontal-line {
-        margin-bottom: 20px;
-    }
-}
- 
- @media screen and (min-width: 720px) {
     .title {
         padding-top: 40px;
     }
 
     .horizontal-line {
         margin-bottom: 40px;
+    }
+
+    .cell-margin {
+        margin: 0 0 20px 0;
+    }
+}
+ 
+ @media screen and (min-width: 720px) {
+    .title {
+        padding-top: 60px;
+    }
+
+    .horizontal-line {
+        margin-bottom: 60px;
+    }
+
+    .cell-margin {
+        margin: 0 0 40px 0;
     }
 }
