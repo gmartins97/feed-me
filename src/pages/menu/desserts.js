@@ -7,13 +7,14 @@ import { Container } from 'react-bootstrap'
 import Base from "../../components/base"
 import NavBar from "../../components/navbar"
 import Address from "../../components/address"
-import Detail from "../../components/detail"
+import Detail from "../../components/new-detail"
 
 import salads from "../../images/salads.jpg"
 import entrees from "../../images/entrees.jpg"
 import meat from "../../images/meat.jpg"
 
-import * as styles from "../../styles/detail.module.scss"
+//import * as styles from "../../styles/detail.module.scss"
+import * as styles from "../../styles/new-detail.module.scss"
 
 const Desserts = () => {
 
@@ -28,7 +29,7 @@ const Desserts = () => {
             <div>
                 <div className={styles.header}>
                     <div className={styles.back}>
-                        <AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.75}><ArrowBackIosIcon color="white"></ArrowBackIosIcon></AniLink>
+                        <AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.75}><ArrowBackIosIcon></ArrowBackIosIcon></AniLink>
                     </div>
                     <div className={styles.title}>
                         <h1>Desserts</h1>

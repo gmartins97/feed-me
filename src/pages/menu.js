@@ -87,15 +87,13 @@ const Menu = () => {
             {/* Place address */}
             <Address></Address>
 
-            <div className={styles.container}>
-                <Container >
-                    {/* Place header */}
-                    {header()}
+            <Container className={styles.container}>
+                {/* Place header */}
+                {header()}
 
-                    {/* Place categories */}
-                    {menu()}
-                </Container>
-            </div>
+                {/* Place categories */}
+                {menu()}
+            </Container>
         </div>
     )
 }

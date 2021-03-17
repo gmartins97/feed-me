@@ -1,6 +1,26 @@
-.title {
-    text-align: right;
+.header {
     color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.back {
+    display: inline-block;
+    flex: 1;
+}
+
+.title {
+    display: inline-block;
+}
+
+.link {
+    color:white;
+}
+
+.link:hover {
+    color:white;
 }
 
 .horizontal-line {
@@ -9,21 +29,13 @@
     height: 5;
 }
 
-.cell-margin {
-    border-color: transparent;
-}
-
 @media screen and (min-width: 0px) {
-    .title {
+    .header {
         padding-top: 40px;
     }
 
     .horizontal-line {
         margin-bottom: 40px;
-    }
-
-    .cell-margin {
-        margin: 0 0 20px 0;
     }
 
     .container {
@@ -32,16 +44,12 @@
 }
  
  @media screen and (min-width: 720px) {
-    .title {
+    .header {
         padding-top: 60px;
     }
 
     .horizontal-line {
         margin-bottom: 60px;
-    }
-
-    .cell-margin {
-        margin: 0 0 40px 0;
     }
 
     .container {
