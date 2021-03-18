@@ -32,7 +32,7 @@ const Index = () => {
         <Image className={styles.landing} src={landing} />
 
         <div>
-          <h1 className={styles.text}>Estamos de volta!</h1>
+          <h1 className={styles.welcome}>Estamos de volta!</h1>
         </div>
 
         <div>

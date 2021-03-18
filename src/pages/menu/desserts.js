@@ -13,7 +13,6 @@ import salads from "../../images/salads.jpg"
 import entrees from "../../images/entrees.jpg"
 import meat from "../../images/meat.jpg"
 
-//import * as styles from "../../styles/detail.module.scss"
 import * as styles from "../../styles/new-detail.module.scss"
 
 const Desserts = () => {
@@ -57,7 +56,7 @@ const Desserts = () => {
             {/* Place address */}
             <Address></Address>
 
-            <Container>
+            <Container className={styles.detail}>
                 {/* Place header */}
                 {header()}
 

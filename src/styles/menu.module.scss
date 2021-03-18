@@ -1,33 +1,36 @@
 .title {
     text-align: right;
     color: white;
+    padding-top: 40px;
 }
 
 .horizontal-line {
     color: white;
     background-color: white;
     height: 5;
+    margin-bottom: 40px;
 }
 
 .cell-margin {
     border-color: transparent;
+    margin-bottom: 20px;
 }
 
-@media screen and (min-width: 0px) {
+.container {
+    height: 85vh;
+}
+
+@media screen and (max-width: 320px) {
     .title {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .horizontal-line {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .cell-margin {
-        margin: 0 0 20px 0;
-    }
-
-    .container {
-        height: 85vh;
+        margin: 0px;
     }
 }
  
@@ -41,7 +44,7 @@
     }
 
     .cell-margin {
-        margin: 0 0 40px 0;
+        margin-bottom: 40px;
     }
 
     .container {

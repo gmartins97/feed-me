@@ -2,6 +2,7 @@
     width: 100%;
     position: relative;
     background-color: #ffd24d;
+    height: 85vh;
 }
 
 .landing {
@@ -11,13 +12,16 @@
     -ms-transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    height: 85vh;
 }
 
-.text {
+.welcome {
+    font-family: "Airbnb Cereal App Extra Bold", georgia, serif;
+    font-size: 40px;
     width: 100%;
     text-align: center;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     padding: 12.5px 40px;
     text-transform: uppercase;
     display: inline-block;
@@ -27,7 +31,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     z-index: 2;
-    text-shadow: 2px 2px #d32d1b;
+    text-shadow: 1px 1px rgba(51, 50, 50, 0.1);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -40,13 +44,12 @@
     background: transparent;
     color: white;
     border: 2px solid white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
     padding: 12.5px 40px;
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    text-shadow: 2px 2px #d32d1b;
 
     position: absolute;
     top: 90%;
@@ -54,7 +57,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 
-    //animate and time the transitions
+    // animate and time the transitions
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
@@ -64,21 +67,17 @@
 
 .button:hover{
     background-color: white;
-    color: #d32d1b;
+    color: #343a40;
     text-shadow: 0px 0px;
 }
 
-@media screen and (min-width: 0px) {
-    .container {
-        height: 85vh;
+@media screen and (max-width: 320px) {
+    .welcome {
+        font-size: 2rem;
     }
 
-    .landing {
-        height: 85vh;
-    }
-
-    .text {
-        font-size: 40px;
+    .button {
+        font-size: 10px;
     }
 }
  
@@ -91,7 +90,11 @@
         height: 90vh;
     }
 
-    .text {
-        font-size: 60px;
+    .welcome {
+        font-size: 6rem;
+    }
+
+    .button {
+        font-size: 20px;
     }
 }

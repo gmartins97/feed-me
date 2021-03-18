@@ -4,15 +4,12 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    padding-top: 40px;
 }
 
 .back {
     display: inline-block;
     flex: 1;
-}
-
-.title {
-    display: inline-block;
 }
 
 .link {
@@ -23,23 +20,74 @@
     color:white;
 }
 
+.title {
+    display: inline-block;
+}
+
 .horizontal-line {
     color: white;
     background-color: white;
     height: 5;
+    margin-bottom: 40px;
 }
 
-@media screen and (min-width: 0px) {
+.detail {
+    height: 85vh;
+}
+
+.wrapper {
+    color: white;
+    max-width: 685.5px !important
+}
+
+.item {
+    max-height: 62vh;
+}
+
+.image {
+    width: 100%;
+}
+
+.card-description {
+    background-color: #6c757d;
+    min-height: 20vh;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.name {
+    text-align: left;
+}
+
+.price {
+    text-align: right;
+}
+
+.description {
+    font-size: 16px;
+    font-family: "Airbnb Cereal App Light", georgia, serif;
+    text-align: justify;
+}
+
+@media screen and (max-width: 320px) {
     .header {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .horizontal-line {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
-    .container {
-        height: 85vh;
+    .name {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 12px;
     }
 }
  
@@ -52,7 +100,12 @@
         margin-bottom: 60px;
     }
 
-    .container {
+    .detail {
         height: 90vh;
+    }
+
+    .card-description {
+        height: 30vh;
+        margin-bottom: 40px;
     }
 }
