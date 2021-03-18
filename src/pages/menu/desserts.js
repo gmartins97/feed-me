@@ -18,9 +18,9 @@ import * as styles from "../../styles/new-detail.module.scss"
 const Desserts = () => {
 
     const items = [
-        { "key": 1, "image": salads, "name": "Salada", "price": "10€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
-        { "key": 2, "image": entrees, "name": "Rissóis", "price": "20€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" },
-        { "key": 3, "image": meat, "name": "Chicha", "price": "30€", "description": "Pão, Pernil de porco, Queijo da Serra da Estrela" }
+        { "key": 1, "image": salads, "name": "Salada", "price": "10€", "description": "Alface, Cebola, Tomate" },
+        { "key": 2, "image": entrees, "name": "Rissóis", "price": "20€", "description": "Pastel salgado recheado de camarão" },
+        { "key": 3, "image": meat, "name": "Posta", "price": "30€", "description": "Chicha da boa" }
     ];
 
     const header = () => {
@@ -31,7 +31,7 @@ const Desserts = () => {
                         <AniLink cover to="/menu" direction="right" bg="#292b2c" className={styles.link} duration={0.75}><ArrowBackIosIcon></ArrowBackIosIcon></AniLink>
                     </div>
                     <div className={styles.title}>
-                        <h1>Desserts</h1>
+                        <h1>Sobremesas</h1>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ const Desserts = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Desserts</title>
+                <title>Sobremesas</title>
             </Helmet>
 
             {/* Place base */}

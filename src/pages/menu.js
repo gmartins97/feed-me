@@ -20,12 +20,12 @@ import * as styles from "../styles/menu.module.scss"
 const Menu = () => {
 
     const cards = [
-        { "image": entrees, "title": "Entrees", "page": "entrees" },
-        { "image": salads, "title": "Salads", "page": "salads" },
-        { "image": meat, "title": "Meat", "page": "meat" },
-        { "image": fish, "title": "Fish", "page": "fish" },
-        { "image": desserts, "title": "Desserts", "page": "desserts" },
-        { "image": drinks, "title": "Drinks", "page": "drinks" }
+        { "image": entrees, "title": "Entradas", "page": "entrees" },
+        { "image": salads, "title": "Saladas", "page": "salads" },
+        { "image": meat, "title": "Carne", "page": "meat" },
+        { "image": fish, "title": "Peixe", "page": "fish" },
+        { "image": desserts, "title": "Sobremesas", "page": "desserts" },
+        { "image": drinks, "title": "Bebidas", "page": "drinks" }
     ];
 
     const header = () => {       
