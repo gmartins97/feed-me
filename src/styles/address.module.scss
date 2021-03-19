@@ -38,9 +38,18 @@ h1 {
     color: white;
 }
 
+.cellphone {
+    font-size: 14px !important;
+    margin-left: 2px;
+}
+
 @media screen and (max-width: 320px) {
     .address {
         font-size: 8px;
+    }
+
+    .cellphone {
+        font-size: 10px !important;
     }
 }
  
@@ -52,5 +61,9 @@ h1 {
     .navbar {
         height: 4vh;
         margin-top: 6vh;
+    }
+
+    .cellphone {
+        font-size: 16px !important;
     }
 }

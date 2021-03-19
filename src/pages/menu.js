@@ -2,6 +2,7 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Helmet } from "react-helmet"
 import { Container, Row, Col } from 'react-bootstrap'
+import { useScrollRestoration } from "gatsby"
 
 import Base from "../components/base"
 import NavBar from "../components/navbar"
@@ -18,6 +19,8 @@ import drinks from "../images/drinks.jpg"
 import * as styles from "../styles/menu.module.scss"
 
 const Menu = () => {
+
+    const scrollRestoration = useScrollRestoration(`teste`)
 
     const cards = [
         { "image": entrees, "title": "Entradas", "page": "entrees" },
@@ -60,7 +63,7 @@ const Menu = () => {
 
                                 return (
                                     <Col className={styles.cellMargin} key={cellIndex}>
-                                        <AniLink cover to={column.page} direction="left" bg="#292b2c" duration={0.75}><Category card={column} index={cellIndex}></Category></AniLink>
+                                        <AniLink cover to={column.page} direction="left" bg="#292b2c" duration={0.75}><Category card={column} index={cellIndex} {...scrollRestoration}></Category></AniLink>
                                     </Col>
                                 )
                             })}
